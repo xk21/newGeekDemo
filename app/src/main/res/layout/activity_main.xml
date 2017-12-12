@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_one_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15818A"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.sharedream.geek.app.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_packName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="测试包名"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_start_scan_thread"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="startScanThread" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_stop_scan_thread"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="stopScanThread" />-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="register" />
+
+        <Button
+            android:id="@+id/btn_release"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="release" />
+
+        <Button
+            android:id="@+id/btn_scan_wifi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="scanWifi" />
+
+        <Button
+            android:id="@+id/btn_upload_log"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="uploadLog" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="#2B2B2B"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_test_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="log"
+            android:textColor="#00BB36"
+            android:textSize="10sp" />
+
+    </ScrollView>
+
+</LinearLayout>
